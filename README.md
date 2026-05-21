@@ -2,7 +2,11 @@
 
 Static AO Labs metronome for `https://meowtronome.aolabs.io/`.
 
-The beat sound is generated in the browser with Web Audio: each tick uses a short pitched "meow" envelope, so the app has no external sound file dependency.
+The beat sound is `assets/meow-silas.ogg`, an unchanged real cat recording from Wikimedia Commons `Meow.ogg`. `assets/meow-silas.mp3` is a browser-compatibility transcode of the same recording.
+
+- Source: https://commons.wikimedia.org/wiki/File:Meow.ogg
+- Author/uploader: Dan Crosby / Dcrosby
+- License: Creative Commons Attribution-Share Alike 3.0 Unported
 
 ## Run Locally
 

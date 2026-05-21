@@ -2,7 +2,7 @@
   "name": "meowtronome",
   "version": "0.1.0",
   "private": true,
-  "description": "A browser metronome whose beat is a synthesized meow.",
+  "description": "A quiet browser metronome using a real cat meow recording.",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js"
