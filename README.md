@@ -2,13 +2,13 @@
 
 Static AO Labs metronome for `https://meowtronome.aolabs.io/`.
 
-The beat sound uses `assets/meow-warm.ogg` and `assets/meow-warm.mp3`, warmer lower-pitched derivatives of a real cat recording from Wikimedia Commons `Meow.ogg`.
+The beat sound uses `assets/meow-cute-clean.ogg` and `assets/meow-cute-clean.mp3`, louder cute-meow derivatives of a real cat recording from Wikimedia Commons `Meow.ogg` with the low thump filtered out.
 
 - Source: https://commons.wikimedia.org/wiki/File:Meow.ogg
 - Author/uploader: Dan Crosby / Dcrosby
 - License: Creative Commons Attribution-Share Alike 3.0 Unported
 
-The cat dance visual is `assets/cat-dance-sheet.webp`, generated as an eight-pose photorealistic sprite sheet for this app.
+The cat dance visual is `assets/cat-dance-cutout.webp`, generated as an eight-pose photorealistic sprite sheet for this app and processed into a transparent cutout.
 
 ## Run Locally
 
