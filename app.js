@@ -1,5 +1,5 @@
 const meowSources = [
-  { url: "./assets/hi.m4a?v=20260522-hi-voice", type: "audio/mp4" },
+  { url: "./assets/maaphh_fVz49SG0.mp3?v=20260521-exact-maaphh", type: "audio/mpeg" },
 ];
 
 const meowSourceUrl = (() => {
@@ -157,7 +157,7 @@ function decodeAudioData(audioContext, arrayBuffer) {
 
 async function loadMeowSample() {
   if (state.meowBuffer) return state.meowBuffer;
-  elements.statusText.textContent = "loading sound";
+  elements.statusText.textContent = "loading cat sound";
   const bytes = await fetchMeowBytes();
   state.meowBuffer = await decodeAudioData(state.audioContext, bytes.slice(0));
   elements.statusText.textContent = "sound ready";
@@ -201,7 +201,7 @@ async function start() {
   elements.catDancer.dataset.motion = "1";
   elements.toggleButton.textContent = "stop";
   elements.toggleButton.setAttribute("aria-pressed", "true");
-  elements.statusText.textContent = "playing";
+  elements.statusText.textContent = "meowing";
   document.body.classList.add("is-running");
   scheduler();
   state.schedulerTimer = window.setInterval(scheduler, lookaheadMs);
@@ -227,7 +227,7 @@ function toggle() {
     return;
   }
   start().catch(() => {
-    elements.statusText.textContent = "sound unavailable";
+    elements.statusText.textContent = "cat sound unavailable";
   });
 }
 
@@ -250,7 +250,7 @@ function tapTempo() {
 }
 
 fetchMeowBytes().catch(() => {
-  elements.statusText.textContent = "sound unavailable";
+  elements.statusText.textContent = "cat sound unavailable";
 });
 
 elements.toggleButton.addEventListener("click", toggle);
